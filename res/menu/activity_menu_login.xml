@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+       <item
+           android:id="@+id/nav_profile"
+           android:title="Profile"
+           android:icon="@drawable/profile_icon"
+           />
+        <item
+            android:id="@+id/nav_result"
+            android:icon="@drawable/test"
+            android:title="Result" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/bell"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_calender"
+            android:icon="@drawable/calendar_icon"
+            android:title="@string/nav_calender" />
+        <item
+            android:id="@+id/nav_registration"
+            android:title="Registration"
+            android:icon="@drawable/icon_register"
+            />
+
+        <item
+            android:id="@+id/nav_downloads"
+            android:icon="@drawable/download_icon"
+            android:title="@string/nav_download" />
+        <item
+            android:id="@+id/nav_fee"
+            android:icon="@drawable/fee"
+            android:title="@string/nav_fee" />
+        <item
+            android:id="@+id/nav_mail"
+            android:icon="@drawable/letter"
+            android:title="Send Mail" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

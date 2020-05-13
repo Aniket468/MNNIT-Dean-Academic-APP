@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:padding-right="http://schemas.android.com/tools">
+
+<group android:checkableBehavior="single">
+    <item android:id="@+id/nav_user"
+        android:title="All User"
+        android:icon="@drawable/all_user"
+    />
+    <item
+        android:id="@+id/updatenotification"
+        android:icon="@drawable/updatenotification"
+        android:title="Update Notification" />
+    <item android:id="@+id/updatedetails"
+
+        android:title="Update Data"
+        android:icon="@drawable/web"
+        />
+    <item android:id="@+id/registrationDetails"
+        android:title="Registration Details"
+        android:icon="@drawable/browser"
+        />
+
+        <item android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"
+        />
+</group>
+</menu>

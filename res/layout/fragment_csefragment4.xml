@@ -1,0 +1,338 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ddf2f4"
+    android:layout_height="match_parent"
+    tools:context="com.example.aniketkumar.mnnit_portal.CSEFragment4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="Subject"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Credit"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Grade"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/sem4"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:layout_height="match_parent"
+                    android:text="ANALYSIS OF ALGORITHMS" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:id="@+id/caa"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:id="@+id/gaa"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:layout_height="match_parent"
+                    android:text="GRAPH THEORY And COMBINATORICS" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/cgc"
+                    android:textColor="#000"
+                    android:inputType="number"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:id="@+id/ggc"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:layout_height="match_parent"
+                    android:text="COMPUTER ORGANIZATION" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/cco"
+                    android:textColor="#000"
+                    android:inputType="number"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:id="@+id/gco"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:layout_height="match_parent"
+                    android:text="AUTOMATA THEORY" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:inputType="number"
+                    android:id="@+id/cat"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:id="@+id/gat"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:layout_height="match_parent"
+                    android:text="CONTEMPORARY ISSUES IN INFORMATION TECHNOLOGY" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:id="@+id/ccit"
+                    android:inputType="number"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/gcit"
+                    android:textColor="#000"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:layout_height="match_parent"
+                    android:text="(SYSTEM CALLS)(LAB)" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:id="@+id/csl"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:id="@+id/gcsl"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="ANALYSIS OF ALGORITHMS (LAB)" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:id="@+id/caal"
+                    android:inputType="number"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:id="@+id/gaal"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="COMMUNICATION FOUNDATION" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/ccf"
+                    android:textColor="#000"
+                    android:inputType="number"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/gcf"
+                    android:textColor="#000"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="COMMUNICATION FOUNDATION LAB" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/ccfl"
+                    android:textColor="#000"
+                    android:inputType="number"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/gcfl"
+                    android:textColor="#000"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="AUTOMATA AND COMPILERS (LAB)" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/cacl"
+                    android:textColor="#000"
+                    android:inputType="number"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/gacl"
+                    android:textColor="#000"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/Text"
+                    android:layout_height="match_parent"
+                    android:id="@+id/upload"
+                    android:text="Upload"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f3f3"
+    android:layout_height="match_parent"
+    tools:context=".PDFVIEW">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearContainer"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:layout_weight="4"
+                android:text="Academics Calender"
+                android:textSize="20dp" />
+        <Button
+            android:layout_width="0dp"
+            android:gravity="right"
+            android:onClick="download"
+            android:layout_weight="1"
+            android:background="@drawable/download_image"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:background="#efe9e9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:id="@+id/progressContainer"
+android:orientation="vertical"
+android:layout_gravity="center"
+android:gravity="center"
+android:layout_height="match_parent">
+<ProgressBar
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:indeterminateTint="@color/colorPrimary"
+
+    />
+</LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+ tools:context=".MailingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:background="#c7c7c7"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MAIL"
+        android:textColor="#FF020202"
+        android:textStyle="bold"
+
+        android:fontFamily="@font/dancing_script"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/save"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/mail"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Mail id"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:hint="enter your password"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="match_parent"
+            android:onClick="saveMail"
+            android:text="Save Deatils"
+            android:layout_height="wrap_content" />
+
+        
+    </LinearLayout>
+    <TextView
+        android:text="Recipient Email"
+        android:textSize="20dp"
+        android:textColor="#FF020202"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF020202"
+        android:textSize="15dp"
+        android:id="@+id/editTextEmail" />
+    <TextView
+        android:text="Subject"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#FF020202"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF020202"
+        android:textSize="15dp"
+        android:id="@+id/editTextSubject" />
+    <TextView
+        android:text="Message"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#FF020202"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:lines="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF020202"
+        android:textSize="15dp"
+        android:id="@+id/editTextMessage" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/buttonSend"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:background="@drawable/send"/>
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Change Mail"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="changemail"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+            android:paddingRight="10dp"
+            android:onClick="opengmail"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/gmail"
+            android:gravity="bottom" />
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aniketkumar.mnnit_portal.News_update">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/sectionHeader"
+            android:layout_margin="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/guillotine_background"
+            android:text="Select number of attachment"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                  <RadioButton
+                      android:layout_width="wrap_content"
+                      android:id="@+id/zero"
+                      android:layout_margin="10dp"
+                      android:text="0"
+                      android:layout_height="wrap_content" />
+
+                 <RadioButton
+                     android:layout_width="wrap_content"
+                     android:id="@+id/one"
+                     android:layout_margin="10dp"
+                     android:layout_height="wrap_content"
+                     android:text="1"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/two"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="2"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/three"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="3"/>
+            </RadioGroup>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Description"
+            android:textColor="@color/guillotine_background"
+            style="@style/sectionHeader"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/description"
+            android:hint="Add notification Description here"
+            android:layout_height="wrap_content" />
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:orientation="vertical"
+                  android:id="@+id/attach1"
+                 android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="attach1"
+                android:text="Choose Attachment 1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/attachment1"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/hint1"
+                android:gravity="center"
+                android:hint="link1 -> Click here to view Morning Schedule"
+                />
+                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/attach2"
+                    android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="attach2"
+            android:text="Choose Attachment 2"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/attachment2"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/hint2"
+            android:gravity="center"
+            android:hint="link2 -> Click here to view Morning Schedule"
+            />
+                    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/attach3"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="attach3"
+            android:text="Choose Attachment 3"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/attachment3"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/hint3"
+            android:gravity="center"
+            android:hint="link3 -> Click here to view Morning Schedule"
+            />
+            </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:background="#b108aefa"
+            android:gravity="center"
+            android:onClick="submit"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

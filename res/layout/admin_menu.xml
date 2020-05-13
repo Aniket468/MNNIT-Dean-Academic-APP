@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar"
+        app:contentInsetStart="0dp">
+
+        <ImageView
+            android:id="@+id/guillotine_hamburger3"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_menu" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:text="Admin Menu"/>
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/Text"
+                android:onClick="alluser"
+                android:text="All User" />
+            <Button
+                android:id="@+id/log_Reg"
+                android:layout_width="match_parent"
+                style="@style/Text"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="updateCalender"
+                android:text="Update Calender/Fee/Download" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Text"
+                android:id="@+id/registration"
+                android:text="Registration Details"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Text"
+                android:onClick="updateNotification"
+                android:text="Update Notification"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Text"
+                android:textColor="#ffffff"
+                android:onClick="adminlogout"
+                android:backgroundTint="#f40808"
+                android:text="Logout"/>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

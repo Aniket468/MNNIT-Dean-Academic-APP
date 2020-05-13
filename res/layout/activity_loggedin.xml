@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Loggedin">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/appBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            android:background="@drawable/regis"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/signupToolbar"
+                app:titleTextColor="#55b8ed"
+                app:title="Profile"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:background="#cecbcc"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="100dp"
+        android:src="@drawable/camera"
+        app:rippleColor="@color/colorPrimaryDark"
+        app:layout_anchor="@+id/appBar"
+        app:layout_anchorGravity="center|bottom"
+        tools:layout_editor_absoluteX="345dp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="100dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/loggedmenu"
+        android:layout_height="60dp"
+        android:src="@drawable/camera"
+        app:rippleColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="bottom|right"
+        tools:layout_editor_absoluteX="345dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

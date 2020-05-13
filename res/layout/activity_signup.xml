@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    
+    android:layout_height="match_parent"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.aniketkumar.mnnit_portal.Signup">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:id="@+id/container"
+        android:layout_height="match_parent">
+        
+        <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/appBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            android:selectAllOnFocus="false"
+            android:background="@drawable/background"
+            android:linksClickable="false"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile"
+                float:civ_border_color="#FF000000"
+                float:civ_border_width="2dp"
+                float:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/signupToolbar"
+                app:titleTextColor="#7bed55"
+                app:title="Registration"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:background="#d9d7d7"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal Info"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                style="@style/sectionHeader"
+                android:lines="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:maxLines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="60dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:src="@drawable/name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="bottom"
+                    android:layout_height="35dp" />
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:textColorHint="#e13482"
+                        android:id="@+id/reg_name"
+                        android:textColor="#000000"
+                        android:paddingLeft="10dp"
+                        android:gravity="bottom"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:hint="Name" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:src="@drawable/regno"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"/>
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:textColorHint="#e13482"
+                        android:id="@+id/reg_regNumber"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:gravity="bottom"
+                        android:paddingLeft="10dp"
+                        android:hint="Registration Number" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:src="@drawable/pass"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"/>
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:id="@+id/reg_password"
+                        android:textColorHint="#e13482"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000"
+                        android:gravity="bottom"
+                        android:inputType="textPassword"
+                        android:hint="Password" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:src="@drawable/confirmpass"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom" />
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:textColorHint="#000000"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColorHint="#e13482"
+                        android:id="@+id/reg_cPassword"
+                        android:textColor="#000000"
+                        android:inputType="textPassword"
+                        android:gravity="bottom"
+                        android:paddingLeft="10dp"
+                        android:hint="Confirm Password" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/calender"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/calendar" />
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:textColorHint="#000000"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:id="@+id/date"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="#e13482"
+                        android:textColor="#000000"
+                        android:gravity="bottom"
+                        android:inputType="date"
+                        android:hint="Date of Birth" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+             </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:src="@drawable/male"
+                    android:id="@+id/genderImage"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/gender"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+
+                        android:id="@+id/male"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:checked="false"
+                        android:text="Male" />
+                     <RadioButton
+                         android:text="Female"
+                         android:id="@+id/female"
+                         android:layout_marginLeft="20dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:columnCount="2"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:rowCount="2"
+                android:layout_height="wrap_content">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/category"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:text="GENERAl"
+                       android:id="@+id/general"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:text="OBC"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/obc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:text="SC/ST"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/sc"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:text="MINORITY"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/minority"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+
+            </GridLayout>
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Register"
+             android:id="@+id/register"
+             android:textColor="#ffffff"
+             android:background="@color/colorPrimary"
+             android:layout_marginTop="15dp"
+             android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="60dp"
+        android:id="@+id/camera"
+        android:src="@drawable/camera"
+        app:backgroundTint="@color/colorPrimary"
+        android:background="#b63eb4"
+        android:elevation="80dp"
+        app:rippleColor="@color/colorPrimaryDark"
+        app:layout_anchor="@+id/appBar"
+        app:layout_anchorGravity="right|bottom"
+        tools:layout_editor_absoluteX="345dp"/>
+    <ProgressBar
+        android:indeterminateTint="#e62727"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        app:layout_anchor="@id/profile_image"
+        app:layout_anchorGravity="center"
+        android:id="@+id/progressBar"
+        />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

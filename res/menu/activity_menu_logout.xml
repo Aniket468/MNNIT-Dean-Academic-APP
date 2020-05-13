@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/house"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/login1"
+            android:title="@string/nav_login" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/bell"
+            android:title="@string/nav_notification" />
+
+        <item
+            android:id="@+id/nav_calender"
+            android:icon="@drawable/calendar_icon"
+            android:title="@string/nav_calender" />
+
+        <item
+            android:id="@+id/nav_downloads"
+            android:icon="@drawable/download_icon"
+            android:title="@string/nav_download" />
+        <item
+            android:id="@+id/nav_fee"
+            android:icon="@drawable/fee"
+            android:title="@string/nav_fee" />
+        <item
+            android:id="@+id/nav_adminLogin"
+            android:icon="@drawable/admin_icon"
+            android:title="Admin Login" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/coding"
+                android:title="@string/nav_about_us" />
+        </menu>
+    </item>
+
+</menu>

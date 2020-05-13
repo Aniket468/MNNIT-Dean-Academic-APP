@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar"
+        app:contentInsetStart="0dp">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/guillotine_hamburger"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_menu" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:gravity="left"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:text="Menu"/>
+
+</LinearLayout>
+    </android.support.v7.widget.Toolbar>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/Text"
+            android:onClick="home_click"
+            android:text="Home" />
+        <Button
+            android:id="@+id/log_Reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/Text"
+            android:onClick="onclickLogReg"
+            android:text="Login/Register" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickNews"
+            android:layout_margin="10dp"
+            style="@style/Text"
+            android:text="Notifications" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text"
+            android:onClick="onclickAcademiccalender"
+            android:text="Academics Calender" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_button"
+            android:layout_height="wrap_content"
+            style="@style/Text"
+            android:onClick="clickDownload"
+            android:text="Downloads" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Fee"
+            style="@style/Text"
+            android:text="Fees Structure " />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adlog"
+            android:background="#f41717"
+            android:layout_margin="10dp"
+            style="@style/Text"
+            android:textColor="#ffffff"
+            android:onClick="adlogin"
+            android:text="Admin Login  " />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar"
+        app:contentInsetStart="0dp">
+
+        <ImageView
+            android:id="@+id/guillotine_hamburger2"
+            android:padding="5dp"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_menu" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:text="Menu"/>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Text"
+                android:id="@+id/bProfile"
+                android:text="Profile"/>
+            
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Text"
+                android:onClick="showresult"
+                android:text="Result"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registration"
+                style="@style/Text"
+                android:text="Registration" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Text"
+                android:onClick="acedemics"
+                android:text="Academics Calender" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_news"
+                style="@style/Text"
+                android:text="News and Updates" />
+
+            <Button
+                android:layout_width="match_parent"
+                style="@style/Text"
+                android:onClick="downloads"
+                android:layout_height="wrap_content"
+                android:text="Downloads" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Text"
+                android:onClick="fee"
+                android:text="Fees Structure " />
+            <Button
+                android:layout_width="match_parent"
+                android:onClick="SendMail"
+                style="@style/Text"
+                android:layout_height="wrap_content"
+                android:text="Send Mail"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Text"
+                android:onClick="logout"
+                android:backgroundTint="#cae14141"
+                android:text=" Logout"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

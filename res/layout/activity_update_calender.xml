@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e3f2fd"
+    android:padding="5dp"
+    tools:context="com.example.aniketkumar.mnnit_portal.UpdateCalender">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+
+            android:layout_height="match_parent">
+                <TextView
+                    style="@style/sectionHeader"
+                    android:textColor="#ef1b0c"
+                    android:padding="10dp"
+                    android:textSize="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Academic Calender" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#f7fa0c0c"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <Button
+                    style="@style/Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:baselineAligned="false"
+                    android:onClick="chooseCalender"
+                    android:text="Choose Calender Upload" />
+
+                <Button
+                    android:id="@+id/uploadCalender"
+                    android:layout_width="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/upload"
+                    android:onClick="uploadCalender" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/calender"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#fd13bf"
+                style="@style/sectionHeader"
+                android:padding="5dp"/>
+            <TextView
+                style="@style/sectionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#ef1b0c"
+                android:padding="10dp"
+                android:textSize="17dp"
+                android:text="Fee Structure" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:backgroundTint="#f7fa0c0c"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="chooseFee"
+                    android:layout_weight="4"
+                    style="@style/Text"
+                    android:text="Choose Fee_Structure Upload" />
+
+                <Button
+                    android:id="@+id/uploadStructure"
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/upload"
+
+                    android:layout_weight="1"
+
+                    android:onClick="uploadFee" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/structure"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#fd13bf"
+                style="@style/sectionHeader"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download Section"
+                android:textColor="#ef1b0c"
+                android:padding="10dp"
+                android:textSize="17dp"
+                style="@style/sectionHeader"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/sectionHeader"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:backgroundTint="#f7fa0c0c"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:onClick="card1"
+                    style="@style/Text"
+                    android:text="1st Curriculam Upload" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/upload"
+                    android:onClick="upload1"
+                    android:layout_weight="1"
+                   />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/card1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:backgroundTint="#f7fa0c0c"
+                    >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        style="@style/Text"
+                        android:layout_weight="4"
+                        android:onClick="card2"
+                        android:text="Rules for Certificate" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/upload"
+                        android:layout_weight="1"
+                        android:onClick="upload2"
+                       />
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/card2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:backgroundTint="#f7fa0c0c"
+                    >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:onClick="card3"
+                        style="@style/Text"
+                        android:text="Ph.D. Reg Docs" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/upload"
+                        android:layout_weight="1"
+                        android:id="@+id/uploadphd"
+                        android:onClick="upload3"
+                        />
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/card3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:backgroundTint="#f7fa0c0c"
+                    >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="card4"
+                        android:layout_weight="4"
+                        style="@style/Text"
+                        android:text="Hostel Allotment Form" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/upload"
+                        android:layout_weight="1"
+                        android:onClick="upload4"
+                       />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/card4"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:backgroundTint="#f7fa0c0c"
+                    >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        style="@style/Text"
+                        android:onClick="card5"
+                        android:text="Notice Day Scholars" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/upload"
+                        android:layout_weight="1"
+                        android:onClick="upload5"
+                       />
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/card5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:backgroundTint="#f7fa0c0c"
+                    >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:onClick="card6"
+ style="@style/Text"
+                        android:text="Affidavit Students " />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/upload"
+                        android:layout_weight="1"
+
+                        android:onClick="upload6"
+                       />
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card6"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:backgroundTint="#f7fa0c0c"
+                    >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:onClick="card7"
+
+                        style="@style/Text"
+                        android:text="Affidavit Parent" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/upload"
+                        android:layout_weight="1"
+                        android:onClick="upload7"
+                       />
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/card7"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#000"
+                    style="@style/sectionHeader"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
